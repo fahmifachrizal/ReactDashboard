@@ -9,12 +9,12 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div className='w-64 h-screen bg-[#171e37] p-4'>
+    <div className='w-64 min-h-screen bg-[#171e37] p-4'>
       <div className='h-12 flex items-center'>
         <img src={Logo} alt='Logo' />
       </div>
       <div>
-        <ul className='mt-8 flex flex-col gap-y-4'>
+        <ul className='mt-16 flex flex-col gap-y-4'>
           <li className='h-12 w-full'>
             <button className='bg-[#1f2849] h-full w-full px-3 flex items-center gap-x-3 rounded-lg hover:bg-[#1f2849]'>
               <img src={home} alt="home"/>
