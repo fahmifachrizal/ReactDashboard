@@ -2,7 +2,7 @@ import React from 'react'
 
 function Metric({icon, title, subtitle}) {
   return (
-    <div className='flex h-full flex-1 bg-[#1c243f] gap-x-4 items-center justify-center rounded-lg hover:bg-[#0bb885] group'>
+    <div className='flex min-h-[6rem] min-w-[14rem] bg-[#1c243f] gap-x-4 items-center justify-center rounded-lg hover:bg-[#0bb885] group'>
       <div className={`p-4 rounded-full ${title!='Total Cost'?'group-hover:bg-[#1c243f]':''}`}>
         <img src={icon} alt="icon" />
       </div>

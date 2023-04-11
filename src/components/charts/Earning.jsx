@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Chart from "react-apexcharts";
 
-function EarningChart() {
-  const [series, setSeries] = useState([78.4375, 55])
+function EarningChart({ value }) {
+  // const [series, setSeries] = useState([78.4375, 55])
   const [options, setOptions] = useState({
     chart: {
       id: "iIuZD",
@@ -49,7 +49,7 @@ function EarningChart() {
     <>
       <Chart
         options={options}
-        series={series}
+        series={value}
         type="radialBar"
         width="160"
         height="200"
